@@ -1,0 +1,16 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "A modular web scraper with anti-bot techniques",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "user-agents": "^1.0.1570",
+    "delay": "^6.0.0",
+    "puppeteer": "^22.3.0"
+  }
+}

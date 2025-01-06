@@ -1,0 +1,58 @@
+{
+      "targets": [
+        {
+          "url": "https://example.com",
+          "selectors": {
+            "title": "h1",
+            "description": "p"
+          },
+          "minDelay": 1000,
+          "maxDelay": 3000,
+          "headers": {
+            "Accept-Language": "en-US,en;q=0.9"
+          },
+          "usePuppeteer": false
+        },
+        {
+          "url": "https://quotes.toscrape.com/",
+           "selectors": {
+             "quotes": ".quote .text",
+             "authors": ".quote .author"
+           },
+           "minDelay": 2000,
+           "maxDelay": 5000,
+           "headers": {
+             "Accept-Language": "es-ES,es;q=0.8"
+           },
+           "usePuppeteer": false
+        },
+        {
+            "url": "https://example.com",
+            "selectors": {
+              "heading": "h1",
+              "content": "div"
+            },
+            "minDelay": 1500,
+            "maxDelay": 4500,
+            "headers": {
+              "Accept-Language": "fr-FR,fr;q=0.7"
+            },
+            "usePuppeteer": true,
+            "interactions": [
+                {
+                    "type": "click",
+                    "selector": "#someButton"
+                },
+                {
+                    "type": "type",
+                    "selector": "#someInput",
+                    "text": "Hello World"
+                },
+                {
+                    "type": "wait",
+                    "duration": 2000
+                }
+            ]
+          }
+      ]
+    }
